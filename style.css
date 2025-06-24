@@ -1,0 +1,72 @@
+:root {
+    --bg-black: #000000;
+    --text-white: #FFFFFF;
+    --border-dark: #222222;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-weight: 300;
+}
+.font-serif { font-family: 'Cormorant Garamond', serif; }
+.font-script { font-family: 'Great Vibes', cursive; }
+.btn-outline {
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+    transition: all 0.3s ease;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+.btn-outline:hover {
+    background-color: var(--text-white);
+    color: var(--bg-black);
+}
+.btn-primary {
+    background-color: var(--text-white);
+    color: var(--bg-black);
+    transition: all 0.3s ease;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.btn-primary:hover {
+    opacity: 0.8;
+}
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.testimonial-slide, .page-view, #search-overlay {
+    display: none;
+}
+.testimonial-slide.active, .page-view.active, #search-overlay.active {
+    display: flex;
+}
+.size-btn.active {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+.color-swatch.active {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+.product-image-zoom-container {
+    overflow: hidden;
+}
+.product-image-zoom-container:hover img {
+    transform: scale(1.2);
+}
+.product-image-zoom-container img {
+    transition: transform 0.5s ease;
+}
